@@ -1,9 +1,7 @@
 # 🫀 Heart Attack Risk Analysis
 
-## 📌 Proje Açıklaması
-Bu proje, Heart Attack Prediction veri seti kullanılarak kalp krizi riskini tahmin etmeyi amaçlayan bir makine öğrenmesi modelini geliştirmektedir. Veri seti, çeşitli demografik ve klinik özelliklere dayalı olarak kalp hastalığı riskini sınıflandırmak için kullanılmıştır.
-
----
+# 📌 Proje Açıklaması
+Bu proje, [Heart Attack Prediction veri seti] (https://www.kaggle.com/datasets/imnikhilanand/heart-attack-prediction) kullanılarak kalp krizi riskini tahmin etmeyi amaçlayan bir makine öğrenmesi modelini geliştirmektedir. Veri seti Kaggle platformundan alınmıştır ve çeşitli demografik ve klinik özelliklere dayalı olarak kalp hastalığı riskini sınıflandırmak için kullanılmıştır.
 
 ## 📊 Kullanılan Modeller ve Sonuçlar
 
