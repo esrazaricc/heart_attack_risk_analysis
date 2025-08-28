@@ -1,8 +1,7 @@
 # 🫀 Heart Attack Risk Analysis
 
 ## 📌 Proje Açıklaması
-
-Bu proje, kalp krizi riskini etkileyen faktörleri analiz etmek ve farklı makine öğrenmesi modellerini karşılaştırarak en yüksek doğrulukla tahmin yapan algoritmayı belirlemek amacıyla hazırlanmıştır. Modelleme sürecinde eksik veri temizliği, görselleştirme, öznitelik kodlama ve hiperparametre optimizasyonları yapılmıştır.
+Bu proje, Heart Attack Prediction veri seti kullanılarak kalp krizi riskini tahmin etmeyi amaçlayan bir makine öğrenmesi modelini geliştirmektedir. Veri seti, çeşitli demografik ve klinik özelliklere dayalı olarak kalp hastalığı riskini sınıflandırmak için kullanılmıştır.
 
 ---
 
@@ -20,6 +19,8 @@ Random Search CV Score: 0.834
 
 Test Accuracy: 0.831
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Decision Tree
 
 Grid Search ile en iyi parametreler: criterion=gini, max_depth=5, max_features=sqrt, min_samples_leaf=1, min_samples_split=2
@@ -30,7 +31,10 @@ Random Search ile en iyi parametreler: min_samples_split=10, min_samples_leaf=4,
 
 Random Search CV Score: 0.791
 
-Test Accuracy: 0.814
+Test Accuracy: 0.814 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Random Forest
 
@@ -44,6 +48,8 @@ Random Search CV Score: 0.826
 
 Test Accuracy: 0.831
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Logistic Regression
 
 Grid Search ile en iyi parametreler: C=0.01, penalty=l2, solver=liblinear, class_weight=None
@@ -55,6 +61,8 @@ Random Search ile en iyi parametreler: C≈0.00996, penalty=l2, solver=liblinear
 Random Search CV Score: 0.843
 
 Test Accuracy: 0.864
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 SVM (Support Vector Machine)
 
@@ -68,6 +76,8 @@ Random Search CV Score: 0.838
 
 Test Accuracy: 0.847
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Naive Bayes
 
 Grid Search ile en iyi parametreler: var_smoothing=1e-09
@@ -80,19 +90,16 @@ Random Search CV Score: 0.821
 
 Test Accuracy: 0.831
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 En yüksek test doğruluğu Logistic Regression ile elde edilmiştir (~86.4%).
 
 KNN, SVM ve Random Forest modelleri de iyi performans göstermiştir (~83–85%).
-
-Bu proje, temel ML pipeline, veri ön işleme, hyperparameter tuning ve model karşılaştırmasını göstermektedir.
-
 Her model için:
 - **GridSearchCV** ve **RandomizedSearchCV** ile hiperparametre optimizasyonu yapılmıştır.
 - **Test doğruluğu** ölçülmüştür.
 
----
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 🧪 Kullanılan Kütüphaneler
 
