@@ -5,7 +5,7 @@ Bu proje,Heart Attack Prediction veri seti (https://www.kaggle.com/datasets/imni
 
 ## 📊 Kullanılan Modeller ve Sonuçlar
 
-KNN (K-Nearest Neighbors)
+**KNN (K-Nearest Neighbors)**
 
 Grid Search ile en iyi parametreler: metric=euclidean, n_neighbors=16, weights=uniform
 
@@ -19,7 +19,7 @@ Test Accuracy: 0.831
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Decision Tree
+**Decision Tree**
 
 Grid Search ile en iyi parametreler: criterion=gini, max_depth=5, max_features=sqrt, min_samples_leaf=1, min_samples_split=2
 
@@ -34,7 +34,7 @@ Test Accuracy: 0.814
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Random Forest
+**Random Forest**
 
 Grid Search ile en iyi parametreler: n_estimators=300, max_depth=5, max_features=sqrt, min_samples_leaf=1, min_samples_split=10, bootstrap=True, criterion=gini
 
@@ -48,7 +48,7 @@ Test Accuracy: 0.831
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Logistic Regression
+**Logistic Regression**
 
 Grid Search ile en iyi parametreler: C=0.01, penalty=l2, solver=liblinear, class_weight=None
 
@@ -62,7 +62,7 @@ Test Accuracy: 0.864
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-SVM (Support Vector Machine)
+**SVM (Support Vector Machine)**
 
 Grid Search ile en iyi parametreler: C=0.01, kernel=linear, gamma=scale, class_weight=balanced
 
@@ -76,7 +76,7 @@ Test Accuracy: 0.847
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Naive Bayes
+**Naive Bayes**
 
 Grid Search ile en iyi parametreler: var_smoothing=1e-09
 
