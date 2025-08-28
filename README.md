@@ -6,15 +6,87 @@ Bu proje, kalp krizi riskini etkileyen faktörleri analiz etmek ve farklı makin
 
 ---
 
-## 📊 Kullanılan Modeller
-Aşağıdaki sınıflandırma algoritmaları eğitilip karşılaştırılmıştır:
+## 📊 Kullanılan Modeller ve Sonuçlar
 
-- K-Nearest Neighbors (KNN)
-- Decision Tree
-- Random Forest
-- Logistic Regression
-- Support Vector Machine (SVM)
-- Naive Bayes
+KNN (K-Nearest Neighbors)
+
+Grid Search ile en iyi parametreler: metric=euclidean, n_neighbors=16, weights=uniform
+
+Grid Search CV Score: 0.839
+
+Random Search ile en iyi parametreler: metric=manhattan, n_neighbors=35, weights=uniform
+
+Random Search CV Score: 0.834
+
+Test Accuracy: 0.831
+
+Decision Tree
+
+Grid Search ile en iyi parametreler: criterion=gini, max_depth=5, max_features=sqrt, min_samples_leaf=1, min_samples_split=2
+
+Grid Search CV Score: 0.805
+
+Random Search ile en iyi parametreler: min_samples_split=10, min_samples_leaf=4, max_features=None, max_depth=5, criterion=gini
+
+Random Search CV Score: 0.791
+
+Test Accuracy: 0.814
+
+Random Forest
+
+Grid Search ile en iyi parametreler: n_estimators=300, max_depth=5, max_features=sqrt, min_samples_leaf=1, min_samples_split=10, bootstrap=True, criterion=gini
+
+Grid Search CV Score: 0.834
+
+Random Search ile en iyi parametreler: n_estimators=500, max_depth=20, max_features=None, min_samples_leaf=4, min_samples_split=5, bootstrap=True, criterion=entropy
+
+Random Search CV Score: 0.826
+
+Test Accuracy: 0.831
+
+Logistic Regression
+
+Grid Search ile en iyi parametreler: C=0.01, penalty=l2, solver=liblinear, class_weight=None
+
+Grid Search CV Score: 0.843
+
+Random Search ile en iyi parametreler: C≈0.00996, penalty=l2, solver=liblinear, class_weight=None
+
+Random Search CV Score: 0.843
+
+Test Accuracy: 0.864
+
+SVM (Support Vector Machine)
+
+Grid Search ile en iyi parametreler: C=0.01, kernel=linear, gamma=scale, class_weight=balanced
+
+Grid Search CV Score: 0.843
+
+Random Search ile en iyi parametreler: C≈0.054, kernel=rbf, gamma=auto, class_weight=balanced
+
+Random Search CV Score: 0.838
+
+Test Accuracy: 0.847
+
+Naive Bayes
+
+Grid Search ile en iyi parametreler: var_smoothing=1e-09
+
+Grid Search CV Score: 0.821
+
+Random Search ile en iyi parametreler: var_smoothing≈1.07e-07
+
+Random Search CV Score: 0.821
+
+Test Accuracy: 0.831
+
+
+
+En yüksek test doğruluğu Logistic Regression ile elde edilmiştir (~86.4%).
+
+KNN, SVM ve Random Forest modelleri de iyi performans göstermiştir (~83–85%).
+
+Bu proje, temel ML pipeline, veri ön işleme, hyperparameter tuning ve model karşılaştırmasını göstermektedir.
 
 Her model için:
 - **GridSearchCV** ve **RandomizedSearchCV** ile hiperparametre optimizasyonu yapılmıştır.
